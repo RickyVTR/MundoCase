@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MundoCase - Fundas y Accesorios Apple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+            color: #111827;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #25D366 !important;
+        }
+        
+        .facebook-button:hover {
+            background-color: #1877F2 !important;
+        }
+        
+        .product-image {
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover .product-image {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                    </svg>
+                    <h1 class="text-xl font-bold text-gray-800">MundoCase</h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://www.facebook.com/share/1GfsdryjGJ/?mibextid=wwXIfr" target="_blank" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="tel:+522285830585" class="text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-phone-alt"></i> <span class="hidden md:inline">+52 228 583 0585</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-indigo-50 to-blue-50 py-16 md:py-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Accesorios premium para tus dispositivos Apple</h2>
+                <p class="text-gray-600 mb-6">Fundas protectoras de máxima calidad diseñadas para tu ecosistema Apple.</p>
+                <div class="flex space-x-4">
+                    <a href="#products" class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-medium cta-button transition">Ver productos</a>
+                    <a href="https://www.facebook.com/share/1GfsdryjGJ/?mibextid=wwXIfr" target="_blank" class="border border-indigo-600 text-indigo-600 px-6 py-2 rounded-lg font-medium hover:bg-indigo-50 transition">Facebook</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://i5.walmartimages.com.mx/samsmx/images/product-images/img_large/981015021l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="iPhone 15 Pro en funda transparente con bordes coloreados sobre mesa de mármol" class="rounded-lg shadow-md max-w-full h-auto" style="max-height: 400px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-12">Nuestros Productos Destacados</h2>
+            
+            <!-- iPhone 15 Featured -->
+            <div class="bg-gray-50 rounded-xl p-6 mb-12 shadow-sm">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                        <img src="https://www.macstoreonline.com.mx/img/sku/IPHONE684_FZ.webp" alt="iPhone 15 Pro en color negro con funda protectora de silicona con textura suave sobre fondo claro" class="product-image rounded-lg w-full max-w-sm">
+                    </div>
+                    <div class="md:w-1/2 md:pl-8 flex flex-col justify-center">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">iPhone 15 Titanio Azul 256 GB</h3>
+                        <div class="flex items-center mb-3">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-sm ml-2">(48 reseñas)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">iPhone 15, usado. Condición/Buena Libre a cualquier comañia</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Antichoque</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">256Gb</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Color Titanio Azul</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-800">$16,999</span>
+                            <a href="https://wa.me/2285830585?text=Hola%20MundoCase,%20me%20interesa%20el%20iPhone%2015" class="bg-green-500 text-white px-6 py-2 rounded-lg font-medium whatsapp-button flex items-center transition">
+                                <i class="fab fa-whatsapp mr-2"></i> Consultar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://scontent.fver2-1.fna.fbcdn.net/v/t39.30808-6/510241737_122120704388859775_4933129959020955082_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFWLndkNELMFKEqAHyvoYMzykb8CgDkdcPKRvwKAOR1wznRCHfhxs62y3LTfvL0AYYmZ_CfnXjgcXNIWQ06Fe_E&_nc_ohc=MexWGLyzYioQ7kNvwEG0KqJ&_nc_oc=AdlQeyoLdt6rYacltSJzRjKx6lS64bKpR3sJFq8A4e-F2nfOiEFFcXqrekzafSrcAucwdhjRCO9a9b-QGbMYSiwm&_nc_zt=23&_nc_ht=scontent.fver2-1.fna&_nc_gid=fB2CG3DDTDqDTeCp6txIHw&oh=00_AfODyycrmUoJ4yjwM01tHdHLRqQxGPvmR9Qy3b8qnvCOSw&oe=6868ADB7" alt="Funda transparente para iPhone con bordes reforzados y botones metálicos en varios colores" class="w-full h-full object-contain product-image p-4">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold mb-2">Funda MagSafe Mate Color</h3>
+                        <p class="text-gray-600 text-sm mb-3">Funda MagSafe color mate para iPhone 12/13/14/14/16 y GAMA PRO.
+                            Disponible en colores Rosa/Turquesa/Azul/Negro
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$149.99</span>
+                            <a href="https://wa.me/2285830585?text=Hola%20MundoCase,%20me%20interesa%20la%20MagSafe%20Color%20Mate" class="text-indigo-600 hover:text-indigo-800">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://th.bing.com/th/id/R.2968af7ce30515dd31cab788583c6f95?rik=P20ztxoQ2IQgtA&pid=ImgRaw&r=0" alt="Funda de cuero genuino para iPhone en color marrón con textura visible y bordes cosidos" class="w-full h-full object-contain product-image p-4">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold mb-2">AirPods Pro 2</h3>
+                        <p class="text-gray-600 text-sm mb-3">Airpods OEM calidad Premium</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$479.99</span>
+                            <a href="https://wa.me/2285830585?text=Hola%20MundoCase,%20me%20interesa%20la%20AirPods%20Pro%202" class="text-indigo-600 hover:text-indigo-800">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md product-card transition duration-300 border border-gray-100">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_808909-MLM81060474277_112024-O.webp" alt="Funda protectora resistente para iPhone con esquinas reforzadas y diseño militar en colores oscuros" class="w-full h-full object-contain product-image p-4">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-semibold mb-2">Cable + Cubo</h3>
+                        <p class="text-gray-600 text-sm mb-3">Cable USB-C a Lighting + Cubo de 20w</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">$249.99</span>
+                            <a href="https://wa.me/2285830585?text=Hola%20MundoCase,%20me%20interesa%20el%20Cubo%20+%20Cable" class="text-indigo-600 hover:text-indigo-800">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-16 bg-indigo-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">¿Necesitas asesoría personalizada?</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Contáctanos directamente por WhatsApp para resolver todas tus dudas sobre nuestros productos.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="tel:+522285830585" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium cta-button flex items-center">
+                    <i class="fas fa-phone-alt mr-2"></i> Llamar ahora
+                </a>
+                <a href="https://wa.me/2285830585?text=Hola%20MundoCase,%20necesito%20asesoría%20sobre%20sus%20productos" class="bg-white border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 flex items-center transition">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold">MundoCase</h3>
+                    </div>
+                    <p class="text-gray-400">Accesorios premium para tus dispositivos Apple. Protección y estilo en un solo lugar.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">
+                            <i class="fas fa-phone-alt mr-2"></i> +52 228 583 0585
+                        </li>
+                        <li class="text-gray-400">
+                            <i class="fas fa-envelope mr-2"></i> jeancarlosdeonatecoto@gmail.com
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/share/1GfsdryjGJ/?mibextid=wwXIfr" target="_blank" class="text-gray-400 hover:text-white transition">
+                                <i class="fab fa-facebook-f mr-2"></i> Facebook
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Horario</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Lunes a Domingo: las 24 horas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>MundoCase. Todo para tus dispositivos Apple.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // WhatsApp button click tracking (example)
+        document.querySelectorAll('[href*="whatsapp"]').forEach(button => {
+            button.addEventListener('click', function() {
+                // Here you could add analytics tracking
+                console.log('WhatsApp button clicked:', this.href);
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
